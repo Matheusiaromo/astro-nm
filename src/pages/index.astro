@@ -1,0 +1,25 @@
+---
+import allPaginas from "../utils/paginas.js"
+import Layout from '../layouts/Layout.astro';
+
+const pagina = await allPaginas.readOne(1, {
+	fields: ['titulo', 'destino_cta', 'delay', 'minutos', 'segundos'],
+})
+
+---
+
+<Layout title="Welcome to Astro.">
+	<div>
+		{pagina.titulo}
+
+		<button>
+			<a href={pagina.destino_cta}>Quero comprar</a>
+		</button>
+
+		tem delay? {pagina.delay}	
+		quantos minutos? {pagina.minutos}
+		quantos segundos? {pagina.segundos}
+	</div>
+</Layout>
+
+

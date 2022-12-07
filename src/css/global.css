@@ -1,0 +1,52 @@
+:root {
+    --body-text: #E9F4FF;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 36px;
+    color: #fff;
+}
+
+p {
+    font-size: 26px;
+    line-height: 41px;
+    color: var(--body-text);
+}
+
+.container {
+    max-width: 1560px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.modal__inner {
+    background: #fff;
+    color: #000;
+    border: 0px;
+    border-radius: 5px;
+    position: relative;
+  }
+
+.modal__inner p {
+    color: #000;
+}
+
+.modal__content {
+gap: 1.5rem;
+padding: 20px;
+}
+
+.modal__close {
+    display: none;
+}

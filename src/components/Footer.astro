@@ -1,0 +1,73 @@
+---
+import { Modal } from 'accessible-astro-components'
+---
+
+<footer class="">
+    <div class="container">
+        <p>ESTE SITE NÃO É do FACEBOOK: Este site não faz parte do site do Facebook ou do Facebook Inc. Além disso, este site NÃO é endossado pelo Facebook de nenhuma maneira. FACEBOOK é uma marca comercial independente da FACEBOOK, Inc.</p>
+        <p>A InfoMakers é uma empresa com o objetivo de ajudar pessoas a obterem resultados financeiros utilizando o poder da internet através de cursos digitais. Não reivindicamos ou declaramos que ao usar o método, você ganhará dinheiro ou recuperará seu dinheiro. Os depoimentos mostrados são negócios e vão variar com base no seu esforço, no conhecimento que você adquirir e nas forças do mercado que estão além do controle de qualquer pessoa.
+        </p>
+        <p>Nós NÃO compartilharemos seu endereço de e-mail com ninguém. Você pode cancelar sua inscrição a qualquer momento. Ao se cadastrar você está concordando com a nossa
+        </p>
+        <p>Copyright © Nômade Milionário 2022</p>
+        <ul>
+            <li><span id="modal-termos">Termos de uso</span></li>
+            <li><span id="modal-politicas">Politcas de Privacidade</span></li>
+        </ul>
+    </div>
+
+</footer>
+
+<Modal
+  triggerId="modal-termos"
+  title="modal-termos"
+  closeText=""
+>
+  <p>Why hello, I be the <strong>first</strong> Modal.</p>
+  <button class="icone-close-modal" onclick="closeModal()">X</button>
+</Modal>
+
+<Modal
+  triggerId="modal-politicas"
+  title="modal-politicas"
+  closeText=""
+>
+  <p>Why hello, I be the <strong>first</strong> Modal.</p>
+  <button class="icone-close-modal" onclick="closeModal()">X</button>
+</Modal>
+
+
+<script>
+   
+</script>
+
+<style lang="scss">
+    footer {
+        background: #000;
+        p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 19px;
+            text-align: center;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            align-items: center; 
+            li span {
+                color: #fff;
+            }
+        }
+    }
+
+    .icone-close-modal {
+        position: absolute;
+        top: -30px;
+        right: 0;
+    }
+    
+
+</style>
+

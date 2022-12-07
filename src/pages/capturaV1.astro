@@ -1,0 +1,55 @@
+---
+import Footer from '../components/Footer.astro'
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Captura V1">
+    <section id="hero">
+        <div class="container">
+            <div>
+                <img src="/logo.png" alt="">
+                <p>Um computador com acesso a internet ...</p>
+                <p>É tudo que você precisa para aprender como transformar o seu notebook numa:</p>
+                <h1>MÁQUINA DE <br>IMPRIMIR DINHEIRO</h1>
+                <p>Clique no botão abaixo e faça o seu <span class="text-[#4BA5FF]">CADASTRO</span></p>
+                <button>SIM! QUERO ME CADASTRAR</button>
+            </div>
+        </div>
+    </section>
+    <Footer />
+</Layout>
+
+<style lang="scss">
+    #hero {
+        background-image: url("/bg-nm-v1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 40% top;
+        background-color: #000;
+        height: 100vh;
+        width: 100vw;
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+            height: 100%;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 645px;
+                text-align: center;
+                padding: 108px 32px;
+
+                h1 {
+                    font-size: 54px;
+                    line-height: 64px;
+                }
+            }
+        }
+    }
+</style>
